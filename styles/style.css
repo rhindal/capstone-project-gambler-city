@@ -1,4 +1,76 @@
+body {
+  background-image: url(../images/mainMenuBackground.png);
+  background-repeat: no-repeat;
+  background-color: #010127;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 550px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 h1 {
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Rye', Times, serif;
+}
+
+ul li {
+  margin-bottom: 50px;
+  border-style: double;
+  border: 2px solid white;
+  width: fit-content;
+  padding: 20px;
+}
+
+.leftNav {
+  font-family: 'Rye', Times, serif;
+  font-size: 50px;
+  list-style-type: none;
+  color: white;
+  margin-left: 300px;
+  margin-top: 175px;
+  display: inline-block;
+}
+
+.back {
+  display: inline-block;
+  font-family: 'Rye', Times, serif;
+  color: white;
+  font-size: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.rightNav {
+  font-family: 'Rye', Times, serif;
+  font-size: 50px;
+  list-style-type: none;
+  color: white;
+  margin-left: 600px;
+  margin-top: 175px;
+  display: inline-block;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e66800, 0 0 40px #e66800, 0 0 50px #e66800, 0 0 60px #e66800, 0 0 70px #e66800;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff854d, 0 0 40px #ff854d, 0 0 50px #ff854d, 0 0 60px #ff854d, 0 0 70px #ff854d, 0 0 80px #ff854d;
+  }
 }
