@@ -38,6 +38,14 @@ function dealDeck(deck, playerHands, numOfPlayers, numOfCards) {
     }
   }
 }
+// Blackjack-specific card value function
+function getBlackjackCardValue(card) {
+  if (card.value === 'A') return 11;  // Ace is worth 11 by default
+  if (card.value === 'K' || card.value === 'Q' || card.value === 'J') return 10;  // Face cards worth 10
+  return parseInt(card.value);  // Numbered cards are worth their face value
+}
+export { printDeck, printDeckValues, getCardValue, getCardSuit, shuffleDeck, dealDeck };
+
 
 // function resetDeck(deck) {
 //   playerHands = [];
@@ -48,5 +56,3 @@ function dealDeck(deck, playerHands, numOfPlayers, numOfCards) {
 //   ]
 //   return deck;
 // }
-
-export {printDeck, printDeckValues, getCardValue, getCardSuit, shuffleDeck, dealDeck};
