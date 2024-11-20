@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,11 @@
     "url": "https://github.com/Kseverson1988/capstone-project-gambler-city/issues"
   },
   "homepage": "https://github.com/Kseverson1988/capstone-project-gambler-city#readme",
-  "type": "module"
+  "type": "module",
+  "keywords": [],
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4"
+  }
 }

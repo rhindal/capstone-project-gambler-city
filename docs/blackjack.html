@@ -11,18 +11,23 @@
   <h1 class="glow">Blackjack</h1>
   <a class="back" href="index.html">Back</a>
   <div id="game-area">
-    <div id="player-hand">
-      <h2>Your Hand (Score: <span id="player-score">0</span>)</h2>
-      <div id="player-cards"></div>
-      <button id="hit-button">Hit</button>
-      <button id="stand-button">Stand</button>
-      <button id="reset-button">Reset Game</button>
+    <div id="game-result" class="result"></div>
+    <div id="hands-container">
+      <div id="player-hand">
+        <div id="player-money"></div>
+        <h2>Your Hand (Score: <span id="player-score">0</span>)</h2>
+        <div id="player-cards"></div>
+        <div class="button-container">
+          <button id="hit-button">Hit</button>
+          <button id="stand-button">Stand</button>
+          <button id="reset-button">Reset Game</button>
+        </div>
+      </div>
+      <div id="dealer-hand">
+        <h2>Dealer's Hand (Score: <span id="dealer-score">0</span>)</h2>
+        <div id="dealer-cards"></div>
+      </div>  
     </div>
-    <div id="dealer-hand">
-      <h2>Dealer's Hand (Score: <span id="dealer-score">0</span>)</h2>
-      <div id="dealer-cards"></div>
-    </div>
-  </div>
   <div id="status"></div>
   
   <script type="module">
