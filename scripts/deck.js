@@ -44,8 +44,24 @@ function getBlackjackCardValue(card) {
   if (card.value === 'K' || card.value === 'Q' || card.value === 'J') return 10;  // Face cards worth 10
   return parseInt(card.value);  // Numbered cards are worth their face value
 }
-export { printDeck, printDeckValues, getCardValue, getCardSuit, shuffleDeck, dealDeck };
 
+
+//creat a new deck of 52 cards
+function createDeck() {
+  const suits = ["C", "D", "H", "S"];
+  const values = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"];
+  let newDeck = [];
+  for (let suit of suits) {
+    for (let value of values) {
+      newDeck.push(value + suit);
+    }
+  }
+  return newDeck;
+}
+
+function drawCard(deck) {
+  return deck.pop();
+}
 
 // function resetDeck(deck) {
 //   playerHands = [];
@@ -56,3 +72,4 @@ export { printDeck, printDeckValues, getCardValue, getCardSuit, shuffleDeck, dea
 //   ]
 //   return deck;
 // }
+export { printDeck, printDeckValues, getCardValue, getCardSuit, shuffleDeck, dealDeck, drawCard, createDeck };
