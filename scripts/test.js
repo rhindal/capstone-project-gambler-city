@@ -1,6 +1,12 @@
 // Import from deck.js
 import { printDeck, printDeckValues, getCardValue, getCardSuit, shuffleDeck, dealDeck } from './deck.js';
 
+//Coin Testing
+let playerMoney = localStorage.getItem('playerMoney') ? parseInt(localStorage.getItem('playerMoney')) : 100;
+console.log(playerMoney)
+
+
+
 
 
 let playerHands = [];
@@ -21,7 +27,7 @@ console.log(playerHands);
 
 //Test for Blackjack
 // Import from `blackjack.js` with a different name for shuffleDeck to avoid conflict
-import { createDeck, shuffleDeck as shuffleBlackjackDeck, calculateScore, drawCard } from './blackjack.js';
+//import { createDeck, shuffleDeck as shuffleBlackjackDeck, calculateScore, drawCard } from './blackjack.js';
 const hand1 = ["A", "K"];
 const hand2 = ["A", "K", "5"];
 const hand3 = ["2", "3", "6"];

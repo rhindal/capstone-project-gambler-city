@@ -55,6 +55,7 @@ function displayHands() {
     console.log(`Card: ${card}, FaceDown: ${isFaceDown}`);
   });
 
+
   // If the game is over, reveal the dealer card
   if (gameOver) {
     const dealerFirstCardElement = dealerHandElement.querySelector('img'); // Select the first card (face-down initially)
@@ -193,8 +194,9 @@ function stand() {
     dealerScore = calculateScore(dealerHand);
   }
 
-  displayHands();  // Re-display hands to show the dealer's final hand
+   
   determineWinner();  // Determine and show the result
+  displayHands();  // Re-display hands to show the dealer's final hand
 }
 
 // Function to determine the winner

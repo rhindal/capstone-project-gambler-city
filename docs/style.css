@@ -108,10 +108,11 @@ Green background box for the game area */
   gap: 10px;
   flex-wrap: wrap;
 }
+
 /* Player and dealer hands */
-#player-hand, #dealer-hand {
+#player-hand, #dealer-hand, #poker-hand {
   flex: 1 1 10vw; /* Allow hands to take up available space equally */
-  max-width: 500px; /* Ensure hands don't stretch too much */
+  max-width: 600px; /* Ensure hands don't stretch too much */
   background-color: #003f00; /* Slightly darker green for card sections */
   padding: 15px;
   border-radius: 10px;
@@ -149,6 +150,10 @@ h2 {
   height: auto;
   max-width: 120px;
   min-width: 60px;
+}
+
+.inactive {
+  background-color: black;
 }
 
 @media (max-width: 1200px) {
