@@ -1,109 +1,37 @@
-Website version 0.1.1 Release notes.
+Release Notes for Gambler City
 
-Implementation.
 
-Docs folder-->
+Gambler City
+Website version 0.0.0 
+11-10-2024
 
-Index.html
+For our first iteration of implementation, we created a docs folder with an Index.html (homepage). It branches into a gambleforcoins.html which is the launching point for 4 possible other sites. These are blackjack.html craps.html poker.html slotmachine.html.
 
-gambleforcoins.html
+The other point from the page is a playminigames.html. It leads to a match.html, a plinko.html and a brickbreak.html
 
-blackjack.html
-craps.html
-poker.html
-slotmachine.html
+We added a scripts folder that includes blackjack.js, deck.js, and test.js.
 
 
 
-playminigames.html
+Gambler City
+Website version 0.0.1 
+11-17-2024 
 
-match.html
-plinko.html
-brickbreak.html
+We added an Images folder. In it is a backgrounds folder, a cards folder, and a dice folder.
 
+Inside the boards folder, we have board.png, dealer.png, minigame.png
 
+In the cards folder, we have the suits of cards and a card-backing all saved as png's.
 
-Images folder-->
-
-backgrounds folder -->
-board.png
-dealer.png
-minigame.png
-
-cards folder -->
-cardbacks.png
-clubs-->
-1C.png
-2C.png
-3C.png
-4C.png
-5C.png
-6C.png
-7C.png
-8C.png
-9C.png
-10C.png
-11C.png
-12C.png
-13C.png
-
-diamonds-->
-1D.png
-2D.png
-3D.png
-4D.png
-5D.png
-6D.png
-7D.png
-8D.png
-9D.png
-10D.png
-11D.png
-12D.png
-13D.png
-
-hearts-->
-1H.png
-2H.png
-3H.png
-4H.png
-5H.png
-6H.png
-7H.png
-8H.png
-9H.png
-10H.png
-11H.png
-12H.png
-13H.png
-
-spades-->
-1S.png
-2S.png
-3S.png
-4S.png
-5S.png
-6S.png
-7S.png
-8S.png
-9S.png
-10S.png
-11S.png
-12S.png
-13S.png
-
-dice folder -->
-d1.png
-d2.png
-d3.png
-d4.png
-d5.png
-d6.png
+In the dice folder, we have all 6 sides of dice as png's.
 
 
 
-scripts folder -->
-blackjack.js
-deck.js
-test.js
+Gambler City
+Website version 0.0.2 
+11-20-2024
+
+We implemented a working Blackjack JavaScript.
+
+
 
