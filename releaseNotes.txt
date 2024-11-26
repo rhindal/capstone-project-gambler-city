@@ -1,43 +1,29 @@
 Release Notes for Gambler City
 
 
-Gambler City
 Website version 0.0.0 
 11-10-2024
 
-For our first iteration of implementation, we created a docs folder with an Index.html (homepage). It branches into a gambleforcoins.html which is the launching point for 4 possible other sites. These are blackjack.html craps.html poker.html slotmachine.html.
-
-The other point from the page is a playminigames.html. It leads to a match.html, a plinko.html and a brickbreak.html
-
-We added a scripts folder that includes blackjack.js, deck.js, and test.js.
+A skeleton project that validates our technology stack for development.
+https://it-sd-capstone.github.io/capstone-project-gambler-city/
 
 
 
-Gambler City
-Website version 0.0.1 
+
+Website version 1.0.0 
 11-17-2024 
 
-We added an Images folder. In it is a backgrounds folder, a cards folder, and a dice folder.
-
-Inside the boards folder, we have board.png, dealer.png, minigame.png
-
-In the cards folder, we have the suits of cards and a card-backing all saved as png's.
-
-In the dice folder, we have all 6 sides of dice as png's.
+We have created our basic layout and graphics for how our game site will look.
+The organization of our separate pages was created including navigation & design.
+We added card images and began game logic for the blackjack game.
+And finally we included code for testing.
 
 
 
 Gambler City
-Website version 0.0.2 
-11-20-2024
-
-We implemented a working Blackjack JavaScript.
-
-
-
-Gambler City
-Website version 0.0.2 
+Website version 1.0.1 
 11-25-2024
 
 We implemented a working Poker JavaScript.
 We implemented a work-in-progress-match-game.
+We continued to improve the functionality of the Blackjack game.
