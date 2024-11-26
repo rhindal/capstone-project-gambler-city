@@ -35,3 +35,9 @@ We implemented a working Blackjack JavaScript.
 
 
 
+Gambler City
+Website version 0.0.2 
+11-25-2024
+
+We implemented a working Poker JavaScript.
+We implemented a work-in-progress-match-game.
