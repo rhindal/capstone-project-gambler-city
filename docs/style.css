@@ -5,6 +5,11 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 a {
@@ -17,22 +22,30 @@ h1 {
   font-family: 'Rye', Times, serif;
 }
 
+ul {
+  text-align: center;
+  list-style-position: inside;
+  display: flex; 
+  flex-direction: column; 
+}
+
 ul li {
   margin-bottom: 50px;
   border-style: double;
-  border: 2px solid white;
-  width: fit-content;
+  border: 15px solid lime;
+  border-radius: 15px;
   padding: 20px;
+  background-color: #003f00;
+  display: inline-block;
 }
 
-.leftNav {
+.nav {
   font-family: 'Rye', Times, serif;
   font-size: 50px;
   list-style-type: none;
-  color: white;
-  margin-left: 300px;
-  margin-top: 175px;
-  display: inline-block;
+  color: lime;
+  font-weight: bold;
+  text-align: center
 }
 
 .back {
@@ -66,14 +79,14 @@ ul li {
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+/* @-webkit-keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e66800, 0 0 40px #e66800, 0 0 50px #e66800, 0 0 60px #e66800, 0 0 70px #e66800;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff854d, 0 0 40px #ff854d, 0 0 50px #ff854d, 0 0 60px #ff854d, 0 0 70px #ff854d, 0 0 80px #ff854d;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e66800, 0 0 40px #e66800, 0 0 50px #e66800, 0 0 60px #e66800, 0 0 70px #e66800;
   }
-}
+} */
 
 /* Blackjack Styles
 Green background box for the game area */
@@ -112,7 +125,7 @@ Green background box for the game area */
 /* Player and dealer hands */
 #player-hand, #dealer-hand, #poker-hand {
   flex: 1 1 10vw; /* Allow hands to take up available space equally */
-  max-width: 600px; /* Ensure hands don't stretch too much */
+  max-width: 500px; /* Ensure hands don't stretch too much */
   background-color: #003f00; /* Slightly darker green for card sections */
   padding: 15px;
   border-radius: 10px;
